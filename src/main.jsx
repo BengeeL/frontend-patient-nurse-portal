@@ -11,7 +11,7 @@ import "./styles/index.css";
 
 // Set up the Apollo Client
 const httpLink = createHttpLink({
-  uri: "http://143.198.34.86:4001/graphql",
+  uri: "https://143.198.34.86:4001/graphql",
   credentials: "include",
 });
 
