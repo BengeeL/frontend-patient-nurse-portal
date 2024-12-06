@@ -9,9 +9,9 @@ import {
 } from "@apollo/client";
 import "./styles/index.css";
 
-// Set up the Apollo Client
+// Set up the Apollo Client with the GraphQL server's URL
 const httpLink = createHttpLink({
-  uri: "https://143.198.34.86:4001/graphql",
+  uri: "https://comp308-backend-server.onrender.com/graphql",
   credentials: "include",
 });
 
