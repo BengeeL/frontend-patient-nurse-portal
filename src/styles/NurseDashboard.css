@@ -1,0 +1,110 @@
+.dashboard-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  width: 100%;
+  margin: 0;
+}
+
+.dashboard-tile {
+  border-radius: 15px;
+  border: 1px solid #e9ecef;
+  backdrop-filter: blur(10px);
+  padding: 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+.dashboard-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.dashboard-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+.dashboard-right {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+.dashboard-tips-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px); /* For Safari */
+  background-color: rgba(170, 170, 170, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.dashboard-tips-popup {
+  position: fixed;
+  width: 50%;
+  height: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  /* Allow for scrolling */
+  overflow-y: auto;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.link:hover {
+  color: #26a57f;
+}
+
+@media screen and (max-width: 768px) {
+  .dashboard-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.dashboad-title {
+  padding: 5px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.button {
+  background-color: #26a57f;
+  border-color: #1f9572;
+  border-radius: 20px;
+  /* alight to the right */
+  float: right;
+}
+
+.button:hover {
+  background-color: #1f9572;
+  border-color: #26a57f;
+}
